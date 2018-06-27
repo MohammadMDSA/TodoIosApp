@@ -10,6 +10,18 @@ import UIKit
 
 class AddTodoViewController: UIViewController {
     
-    // MARK: Actions
+    override func viewDidLoad() {
+        super.viewDidLoad();
+    }
     
+    // MARK: Properties
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+
+    // MARK: Actions
+    @IBAction func cancelAction(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil);
+    }
+    
+    @IBAction func saveAction(_ sender: UIBarButtonItem) {
+    }
 }

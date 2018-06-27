@@ -114,7 +114,7 @@
                     <navigationItem key="navigationItem" title="Todos" id="Zdf-7t-Un8">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Cjh-Uz-uTs">
                             <connections>
-                                <segue destination="E9Z-04-nST" kind="presentation" id="7sq-F4-gh6"/>
+                                <segue destination="E9Z-04-nST" kind="presentation" identifier="addTodo" id="7sq-F4-gh6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -126,7 +126,7 @@
         <!--Add Todo-->
         <scene sceneID="SIH-bq-b6l">
             <objects>
-                <viewController id="XxY-M0-38Q" sceneMemberID="viewController">
+                <viewController id="XxY-M0-38Q" customClass="AddTodoViewController" customModule="TodoIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5wK-o5-Qma">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,7 +140,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lNp-Bb-nNb">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lNp-Bb-nNb">
                                         <rect key="frame" x="0.0" y="38" width="335" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -158,8 +158,20 @@
                         <viewLayoutGuide key="safeArea" id="KJG-AQ-X0e"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Todo" id="hba-3c-jWO">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="sP8-gW-bUY"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="sP8-gW-bUY">
+                            <connections>
+                                <action selector="cancelAction:" destination="XxY-M0-38Q" id="ZPa-Jp-wMI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="pON-I5-LBM">
+                            <connections>
+                                <action selector="saveAction:" destination="XxY-M0-38Q" id="Ua8-5Z-CjC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="saveButton" destination="pON-I5-LBM" id="dgW-4Q-7zA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5pV-27-EdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
