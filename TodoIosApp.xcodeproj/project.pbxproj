@@ -16,6 +16,7 @@
 		3716DF2D20E34D6F0092A5AA /* TodoIosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716DF2C20E34D6F0092A5AA /* TodoIosAppTests.swift */; };
 		3716DF3820E34D6F0092A5AA /* TodoIosAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716DF3720E34D6F0092A5AA /* TodoIosAppUITests.swift */; };
 		3716DF4620E358910092A5AA /* AddTodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716DF4520E358910092A5AA /* AddTodoController.swift */; };
+		3716DF4820E367FC0092A5AA /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716DF4720E367FC0092A5AA /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3716DF3720E34D6F0092A5AA /* TodoIosAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoIosAppUITests.swift; sourceTree = "<group>"; };
 		3716DF3920E34D6F0092A5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3716DF4520E358910092A5AA /* AddTodoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoController.swift; sourceTree = "<group>"; };
+		3716DF4720E367FC0092A5AA /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				3716DF1720E34D660092A5AA /* MasterViewController.swift */,
 				3716DF1920E34D660092A5AA /* DetailViewController.swift */,
 				3716DF4520E358910092A5AA /* AddTodoController.swift */,
+				3716DF4720E367FC0092A5AA /* Todo.swift */,
 				3716DF1B20E34D660092A5AA /* Main.storyboard */,
 				3716DF1E20E34D6E0092A5AA /* Assets.xcassets */,
 				3716DF2020E34D6E0092A5AA /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 				3716DF4620E358910092A5AA /* AddTodoController.swift in Sources */,
 				3716DF1820E34D660092A5AA /* MasterViewController.swift in Sources */,
 				3716DF1620E34D660092A5AA /* AppDelegate.swift in Sources */,
+				3716DF4820E367FC0092A5AA /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
