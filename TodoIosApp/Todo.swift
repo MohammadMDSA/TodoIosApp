@@ -16,7 +16,7 @@ class Todo {
     private var _description: String;
     
     //MARK: Getters
-    var createdAt: Int64 {
+    var createdAt: Double {
         get {return _createdAt}
     }
     
